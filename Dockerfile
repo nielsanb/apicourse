@@ -18,7 +18,7 @@ USER user
 
 #run a script by running container
 #CMD ["python", "./helloworld.py"]
-ENTRYPOINT ["python", "./helloworld.py"]
+#ENTRYPOINT ["python", "./helloworld.py"]
 
 
 
