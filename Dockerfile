@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.10-alpine
 MAINTAINER Niels Anbeek
 
 ENV PYTHONUNBUFFERED 1
@@ -15,5 +15,10 @@ COPY ./app /app
 #create user to run the app, for security reasons
 RUN adduser -D user
 USER user
+
+#run a script by running container
+#CMD ["python", "./helloworld.py"]
+ENTRYPOINT ["python", "./helloworld.py"]
+
 
 
