@@ -17,8 +17,5 @@ RUN adduser -D user
 USER user
 
 #run a script by running container
-#CMD ["python", "./helloworld.py"]
-#ENTRYPOINT ["python", "./helloworld.py"]
-
-
-
+CMD ["python", "./helloworld.py"]
+ENTRYPOINT ["python", "./helloworld.py"]
